@@ -872,15 +872,6 @@ public static class Generic
         return DynamicFunctionInvoke(pFunc, functionDelegateType, ref parameters);
     }
 
-    public static object CallMappedDLLModuleExportRef(PE.PE_META_DATA peInfo, IntPtr moduleMemoryBase, string exportName, Type functionDelegateType, ref object[] parameters, bool callEntry = true)
-    {
-        if (callEntry)
-            CallMappedDLLModule(peInfo, moduleMemoryBase);
-
-        var pFunc = GetExportAddress(moduleMemoryBase, exportName);
-        return DynamicFunctionInvoke(pFunc, functionDelegateType, ref parameters);
-    }
-
     /// <summary>
     /// Call a manually mapped DLL by Export.
     /// </summary>
