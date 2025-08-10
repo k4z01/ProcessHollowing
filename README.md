@@ -1,4 +1,4 @@
-This is an implementation of the process hollowing technique using DInvoke from TheWover.
+This repository contains code samples for Process Hollowing. The standard version uses native Windows APIs, while the DInvoke version uses dynamic invocation based on TheWover’s project.
 
 By targeting a trusted executable it can be used to bypass AV/Firewall solutions.
 
