@@ -1,0 +1,15 @@
+C:\Users\john\source\repos\Hollow\Hollow\bin\x64\Release\Hollow.exe.config
+C:\Users\john\source\repos\Hollow\Hollow\bin\x64\Release\Hollow.exe
+C:\Users\john\source\repos\Hollow\Hollow\bin\x64\Release\Hollow.pdb
+C:\Users\john\source\repos\Hollow\Hollow\obj\x64\Release\Hollow.csproj.AssemblyReference.cache
+C:\Users\john\source\repos\Hollow\Hollow\obj\x64\Release\Hollow.csproj.CoreCompileInputs.cache
+C:\Users\john\source\repos\Hollow\Hollow\obj\x64\Release\Hollow.exe
+C:\Users\john\source\repos\Hollow\Hollow\obj\x64\Release\Hollow.pdb
+C:\Users\john\Desktop\Hollow\Hollow\bin\x64\Release\Hollow.exe.config
+C:\Users\john\Desktop\Hollow\Hollow\bin\x64\Release\Hollow.exe
+C:\Users\john\Desktop\Hollow\Hollow\bin\x64\Release\Hollow.pdb
+C:\Users\john\Desktop\Hollow\Hollow\obj\x64\Release\Hollow.csproj.AssemblyReference.cache
+C:\Users\john\Desktop\Hollow\Hollow\obj\x64\Release\Hollow.csproj.SuggestedBindingRedirects.cache
+C:\Users\john\Desktop\Hollow\Hollow\obj\x64\Release\Hollow.csproj.CoreCompileInputs.cache
+C:\Users\john\Desktop\Hollow\Hollow\obj\x64\Release\Hollow.exe
+C:\Users\john\Desktop\Hollow\Hollow\obj\x64\Release\Hollow.pdb
